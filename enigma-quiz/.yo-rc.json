@@ -1,0 +1,30 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.0.0",
+    "baseName": "enigmaQuiz",
+    "packageName": "com.yms.enigma.quiz",
+    "packageFolder": "com/yms/enigma/quiz",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "hibernateCache": "ehcache",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "buildTool": "maven",
+    "jwtSecretKey": "17e4e8e84e0e8adffc13c90080c873b9dc6764cf",
+    "enableTranslation": true,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true,
+    "nativeLanguage": "ro",
+    "languages": [
+      "ro",
+      "en"
+    ]
+  }
+}

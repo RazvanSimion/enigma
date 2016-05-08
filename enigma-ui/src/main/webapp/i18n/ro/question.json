@@ -1,0 +1,27 @@
+{
+    "enigmaUiApp": {
+        "question" : {
+            "home": {
+                "title": "Questions",
+                "createLabel": "Crează o nouă Question",
+                "createOrEditLabel": "Crează sau editează o Question",
+                "search": "Search for Question"
+            },
+            "created": "O nouă Question este creată cu identificatorul {{ param }}",
+            "updated": "O Question este editată cu identificatorul {{ param }}",
+            "deleted": "O Question este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Question {{ id }}?"
+            },
+            "detail": {
+                "title": "Question"
+            },
+            "subject": "Subject",
+            "content": "Content",
+            "difficulty": "Difficulty",
+            "answer": "Answer",
+            "language": "Language",
+            "category": "Category"
+        }
+    }
+}

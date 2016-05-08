@@ -1,0 +1,10 @@
+version: '2'
+services:
+    enigmaui-elasticsearch:
+        container_name: enigmaui-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/enigmaUI/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300

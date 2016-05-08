@@ -1,0 +1,14 @@
+version: '2'
+services:
+    enigmagraph-app:
+        image: enigmagraph
+        external_links:
+            - jhipster-registry:registry
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://registry:8761/eureka/
+            - SPRING_CLOUD_CONFIG_URI=http://registry:8761/config
+    jhipster-registry:
+        extends:
+            file: jhipster-registry.yml
+            service: jhipster-registry

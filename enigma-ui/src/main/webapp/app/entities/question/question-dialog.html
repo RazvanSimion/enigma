@@ -1,0 +1,68 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myQuestionLabel" translate="enigmaUiApp.question.home.createOrEditLabel">Create or edit a Question</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.question.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="enigmaUiApp.question.subject" for="field_subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="field_subject"
+                    ng-model="vm.question.subject"
+                    required />
+            <div ng-show="editForm.subject.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.subject.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="enigmaUiApp.question.content" for="field_content">Content</label>
+            <input type="text" class="form-control" name="content" id="field_content"
+                    ng-model="vm.question.content"
+                    required />
+            <div ng-show="editForm.content.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.content.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="enigmaUiApp.question.difficulty" for="field_difficulty">Difficulty</label>
+            <input type="number" class="form-control" name="difficulty" id="field_difficulty"
+                    ng-model="vm.question.difficulty"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="enigmaUiApp.question.language" for="field_language">language</label>
+            <select class="form-control" id="field_language" name="language" ng-model="vm.question.languageId" ng-options="language.id as language.id for language in vm.languages">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="enigmaUiApp.question.category" for="field_category">category</label>
+            <select class="form-control" id="field_category" name="category" ng-model="vm.question.categoryId" ng-options="category.id as category.id for category in vm.categorys">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,34 @@
+
+entity Question {		    
+    subject String required
+	content String required
+    difficulty Long    
+}
+entity Answer {		
+    content String required,
+    correct Long required
+}
+entity Language {		
+    name String required
+}
+entity Category {	    
+    name String required,
+    description String
+}
+
+relationship OneToMany {
+	Category{question} to Question
+}
+
+relationship OneToMany {
+	Language{question} to Question
+}
+
+relationship OneToMany {
+	Question{answer} to Answer
+}
+
+paginate Question, Answer, Language, Category with infinite-scroll
+//paginate Job with pagination
+dto Question, Answer, Language, Category with mapstruct
+service Question, Answer, Language, Category with serviceClass

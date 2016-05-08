@@ -1,0 +1,23 @@
+{
+    "enigmaUiApp": {
+        "language" : {
+            "home": {
+                "title": "Languages",
+                "createLabel": "Crează o nouă Language",
+                "createOrEditLabel": "Crează sau editează o Language",
+                "search": "Search for Language"
+            },
+            "created": "O nouă Language este creată cu identificatorul {{ param }}",
+            "updated": "O Language este editată cu identificatorul {{ param }}",
+            "deleted": "O Language este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Language {{ id }}?"
+            },
+            "detail": {
+                "title": "Language"
+            },
+            "name": "Name",
+            "question": "Question"
+        }
+    }
+}

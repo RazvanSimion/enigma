@@ -1,0 +1,29 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.0.0",
+    "baseName": "enigmaGraph",
+    "packageName": "com.yms.enigma.graph",
+    "packageFolder": "com/yms/enigma/graph",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": "no",
+    "buildTool": "maven",
+    "jwtSecretKey": "c19c1a4ab5dc5f3527a1f082ea6ae60af3404023",
+    "enableTranslation": true,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true,
+    "nativeLanguage": "ro",
+    "languages": [
+      "ro",
+      "en"
+    ]
+  }
+}

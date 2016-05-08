@@ -1,0 +1,100 @@
+body {
+    background-color: transparent !important;
+
+}
+.main-body {
+    background-repeat: no-repeat;
+    /*background-image: url("../images/body.png") !important;
+    background-image: url("../images/sky.jpg") !important;*/
+    background-image: url("../images/body-transparent.png") !important;
+    background-size:cover;
+}
+.navbar-header {
+    background: transparent !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: transparent !important;
+
+}
+
+.navbar-default {
+    border: none !important;
+    background: transparent !important;
+}
+
+
+
+
+.navbar-icon {
+    padding-top: 5px !important;
+    padding-left: 5px;
+}
+
+.container {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+}
+
+#enigmaMap {
+    position:absolute;
+    top:0px;
+    width:100%;
+}
+
+#enigmaNavbar {
+    z-index: 1000;
+}
+
+.comming-soon {
+    z-index: 1001;
+    position:absolute;
+    top: 150px;
+}
+.navbar-nav {
+    padding-top: 5px;
+}
+
+.navbar-nav>li {
+    background-color: rgba(255,255,255,0.5);
+    margin-right: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3px;
+
+
+}
+.navbar-nav>li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #888;
+}
+
+
+.navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > .open {
+    color: #00ABED;
+    background-color: rgba(255,255,255,0.8);
+    margin-right: 5px;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:focus {
+    color: #00ABED;
+    background-color: transparent;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-dark {
+    color: #888 !important;
+}
+
+.no-border-color {
+    border-color: #fff;
+}

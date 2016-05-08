@@ -1,0 +1,24 @@
+{
+    "enigmaUiApp": {
+        "answer" : {
+            "home": {
+                "title": "Answers",
+                "createLabel": "Crează o nouă Answer",
+                "createOrEditLabel": "Crează sau editează o Answer",
+                "search": "Search for Answer"
+            },
+            "created": "O nouă Answer este creată cu identificatorul {{ param }}",
+            "updated": "O Answer este editată cu identificatorul {{ param }}",
+            "deleted": "O Answer este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Answer {{ id }}?"
+            },
+            "detail": {
+                "title": "Answer"
+            },
+            "content": "Content",
+            "correct": "Correct",
+            "question": "Question"
+        }
+    }
+}

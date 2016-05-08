@@ -1,0 +1,28 @@
+
+<div>
+    <h2><span translate="enigmaUiApp.answer.detail.title">Answer</span> {{vm.answer.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="enigmaUiApp.answer.content">Content</dt></dt>
+        <dd>
+            <span>{{vm.answer.content}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="enigmaUiApp.answer.correct">Correct</dt></dt>
+        <dd>
+            <span>{{vm.answer.correct}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="enigmaUiApp.answer.question">question</span></dt>
+        <dd>
+            <a ui-sref="question-detail({id:vm.answer.questionId})">{{vm.answer.questionId}}</a>
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
