@@ -35,4 +35,4 @@ To setup this project in Jenkins, use the following configuration:
 
 [JHipster]: https://jhipster.github.io/
 
-## GetBadges integration
+## GetBadges integration 1
