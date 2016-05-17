@@ -34,3 +34,5 @@ To setup this project in Jenkins, use the following configuration:
     * Publish JUnit test result report / Test Report XMLs: `build/test-results/*.xml`
 
 [JHipster]: https://jhipster.github.io/
+
+## GetBadges integration
